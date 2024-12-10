@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sequence, Selection and Loop</title>
 </head>
+
 <body>
     <h1>Working with Sequence, Selection and Loop</h1>
-    
+
     <script>
         var myString = "I am really hungy for some";
         console.log(myString);
@@ -15,8 +17,28 @@
         console.log(myUpperCaseString);
 
         var reallyLocation = myString.search('really');
-        console.log(reallyLocation);
+        var specialWord = myString.substr(reallyLocation, 6);
+        specialWord = specialWord.toUpperCase();
+        var newString = myString.replace('really', specialWord);
+        console.log(newString);
+
+        var foods = ['cheese', 'pie', 'breakfast', 'lunch'];
+
+        for (var i = 0; i < foods.length; i++) {
+            //checking to see if incrementor is even
+            if (i % 2 === 0) {
+                console.log(`${myString} ${foods[i].toUpperCase()} \n`);
+            }
+            else
+                console.log(`${myString} ${foods[i]} \n`);
+        }
+
+        /* for (var eachFood of foods) {
+            console.log(`${myString} ${eachFood}`);
+        } */
+
     </script>
 
 </body>
+
 </html>

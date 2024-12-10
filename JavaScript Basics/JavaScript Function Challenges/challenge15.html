@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function Challenges: Challenge 15</title>
+</head>
+
+<body>
+    <h1>JavaScript Function Challenges</h1>
+    <h2>Challenge 15</h2>
+    <script>
+        function hello(name) {
+            if (name === null || name === '') {
+                return `You didn't give me your name!`;
+            }
+            else
+                return `Hello ${name}, and welcome!`;
+        }
+        
+        var foods = ['apple', 'orange', 'banana', 'kiwi', 'pear'];
+        
+        function hospitality(name, gift) {
+            console.log(hello(name));
+            for (let i = 0; i < gift.length; i++) {
+                console.log(`${name}, would you like some ${gift[i]}?`);
+            }
+        }
+
+        hospitality(prompt('Enter your name:'), foods);
+    </script>
+</body>
+
+</html>
