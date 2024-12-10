@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Loops</title>
+</head>
+
+<body>
+    <h1>Loops in JS</h1>
+    <script>
+
+        /* var myString = "Here is a string of text!";
+
+        for (var i = 0;i<myString.length;i++) {
+            console.log(myString[i]);
+        }
+
+        for (var eachLetter of myString) {
+            console.log(eachLetter);
+        } */
+
+        var incrementor = 1;
+        var text = "";
+
+        while (incrementor < 11) {
+            text += `The incrementor is ${incrementor}, the incrementor squared is ${incrementor * incrementor} \n`;
+            incrementor++;
+        }
+        console.log(text);
+
+    </script>
+</body>
+
+</html>
