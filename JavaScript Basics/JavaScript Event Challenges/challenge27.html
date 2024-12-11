@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Challenges: Challenge 27</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Event Challenges: Challenge 27</h1>
+    
+    <form>
+        <label>Enter a number <input type="text"></label>
+        <input type="submit" value="send number">
+    </form>
+
+    <script>
+        var num;
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            num = this.querySelector('input').value;
+            if(isNaN(num)) {
+                alert('Please enter a valid number');
+            } else {
+                document.querySelector('h1').style.fontSize = num + 'px';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

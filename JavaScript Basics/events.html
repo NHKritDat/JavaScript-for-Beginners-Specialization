@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <!-- <style>
+        div {
+            width: 50px;
+            /* height: 50px; */
+            height: 5000px;
+            background-color: red;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- <h1>JavaScript Events</h1> -->
+
+    <!-- <button>Don't Press Me!</button> -->
+
+    <!-- <a href="https://google.com">Link to Google</a> -->
+
+    <!-- <form method="get">
+        <label> Your name: <input type="text" name="name"></label>
+        <input type="submit" value="send">
+    </form> -->
+
+    <!-- <h1>Roll Your Mouse Over The Boxes</h1> -->
+    <!-- <h1>Capturing Scroll Events</h1>
+    <div></div> -->
+
+    <!-- <h1>Window Resizing</h1>
+    <p>Resize the window and watch the console</p> -->
+    
+    <h1>Keydown Event</h1>
+    <p>Press a key on your keyboard</p>
+
+    <script>
+
+        document.addEventListener('keydown', function (event) {
+            alert(`The ${event.key} key was pressed`);
+        });
+
+        /* window.addEventListener('resize', function(){
+            console.log(`The window width is: ${window.innerWidth}`);
+            console.log(`The window height is: ${window.innerHeight}`);
+        }); */
+
+        /* var pagetop;
+
+        window.addEventListener('scroll', function () {
+            pagetop = window.pageYOffset;
+            console.log(pagetop);
+        }); */
+
+        /* var heading = document.querySelector('h1');
+        var box = document.querySelector('div');
+        
+        box.addEventListener('mouseover', function () {
+            heading.innerHTML = 'Mouse Over The Box';
+        });
+
+        box.addEventListener('mouseout', function () {
+            heading.innerHTML = 'Mouse Out Of The Box';
+        });
+
+        heading.addEventListener('mouseover', function () {
+            heading.innerHTML = 'Roll Your Mouse Over The Boxes';
+        }); */
+
+        /* var btn = document.querySelector('button');
+
+        btn.addEventListener('click', function (event) {
+            event.target.style.backgroundColor = 'red';    
+            alert('Stop poking me!');
+        }); */
+
+        /* var link = document.querySelector('a');
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            alert('Sorry, no google for you!');
+        }); */
+
+        /* var myForm = document.querySelector('form');
+
+        myForm.addEventListener('submit', function (evt) {
+            evt.preventDefault();
+
+            var formData = document.querySelector('input').value;
+
+            alert(formData);
+
+        }); */
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Challenges: Challenge 30</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .one {
+            background-color: beige;
+            transition: all 3s;
+        }
+
+        .two {
+            background-color: blueviolet;
+            transition: all 3s;
+        }
+
+        .three {
+            background-color: coral;
+            transition: all 3s;
+        }
+
+        .four {
+            background-color: cornflowerblue;
+            transition: all 3s;
+        }
+
+        .five {
+            background-color: darkgoldenrod;
+            transition: all 3s;
+        }
+    </style>
+</head>
+
+<body class="one">
+
+    <h1>JavaScript Event Challenges: Challenge 30</h1>
+    <p>Press the B key to turn the page beige</p>
+    <p>Press the V key to turn the page blueviolet</p>
+    <p>Press the C key to turn the page coral</p>
+    <p>Press the F key to turn the page cornflowerblue</p>
+    <p>Press the G key to turn the page darkgoldenrod</p>
+
+    <script>
+        window.addEventListener('keydown', function (e) {
+            switch (e.key) {
+                case 'b':
+                    document.body.className = 'one';
+                    break;
+                case 'v':
+                    document.body.className = 'two';
+                    break;
+                case 'c':
+                    document.body.className = 'three';
+                    break;
+                case 'f':
+                    document.body.className = 'four';
+                    break;
+                case 'g':
+                    document.body.className = 'five';
+                    break;
+                default:
+                    alert('Please press B, V, C, F, or G');
+                    break;
+            }
+        });
+    </script>
+
+</body>
+
+</html>

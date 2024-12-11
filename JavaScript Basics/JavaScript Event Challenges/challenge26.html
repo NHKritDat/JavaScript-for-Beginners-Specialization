@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Challenges: Challenge 26</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Event Challenges: Challenge 26</h1>
+    <div>
+        <p>This is paragraph number 1</p>
+    </div>
+    <button>Add a paragraph</button>
+    <button>Remove a paragraph</button>
+
+    <script>
+        var allBtns = document.querySelectorAll('button');
+        var div = document.querySelector('div');
+        var num = 1;
+        allBtns[0].addEventListener('click', function () {
+            var p = document.createElement('p');
+            var text = document.createTextNode('This is paragraph number ' + ++num);
+            p.appendChild(text);
+            div.appendChild(p);
+        });
+        allBtns[1].addEventListener('click', function () {
+            if (num === 1) {
+                alert('You are trying to delete last paragraph');
+            }
+            else {
+                div.removeChild(div.lastChild);
+                num--;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
