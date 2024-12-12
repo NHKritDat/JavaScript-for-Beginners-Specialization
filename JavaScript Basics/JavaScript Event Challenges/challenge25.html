@@ -16,20 +16,8 @@
     <button>Add a paragraph</button>
     <button>Remove a paragraph</button>
 
-    <script>
-        var allBtns = document.querySelectorAll('button');
-        var div = document.querySelector('div');
-        allBtns[0].addEventListener('click', function () {
-            var p = document.createElement('p');
-            var text = document.createTextNode('A new paragraph');
-            p.appendChild(text);
-            div.appendChild(p);
-        });
-        allBtns[1].addEventListener('click', function () {
-            div.removeChild(div.lastChild);
-        });
-    </script>
-
 </body>
+
+<script src="script25.js"></script>
 
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+
+<body>
+    <h1>Testing Scope in JavaScript</h1>
+
+    <p>Here is a paragraph</p>
+    <p>Here is another paragraph</p>
+    <p>Here is one more paragraph</p>
+
+    <script>
+        console.log(cheese);
+        const cheese = 'cheese is yummy';
+    </script>
+
+    <!-- <script>
+
+        for (let i = 0; i < 10; i++) {
+            console.log(i);
+        }
+
+        console.log(`the value of i is ${i}`);
+
+    </script> -->
+
+    <!-- <script>
+
+        const cheese = 'cheese is yummy';
+
+        console.log(cheese);
+
+        cheese = 'cheese is yucky';
+
+    </script> -->
+
+    <!-- <script>
+        
+        "use strict";
+
+        var newVar = "not properly defined";
+
+        console.log(newVar);
+
+    </script> -->
+
+    <!-- <script>
+
+        (function () {
+            var myPs = document.querySelectorAll('p');
+
+            for (var i = 0; i < myPs.length; i++) {
+                myPs[i].style.color = 'red';
+            }
+        }());
+
+        console.log(myPs);
+
+    </script> -->
+
+    <!-- <script>
+        var aVariable = "this is in the global scope";
+
+        function testScope(){
+            var oopsGlobal = "This is a global variable";
+            var aVariable = "This is in the local scope";
+            console.log(aVariable);
+        }
+
+        testScope();
+        
+        console.log(oopsGlobal);
+    </script> -->
+</body>
+
+</html>

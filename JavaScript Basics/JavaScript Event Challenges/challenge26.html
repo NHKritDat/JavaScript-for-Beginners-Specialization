@@ -16,27 +16,8 @@
     <button>Add a paragraph</button>
     <button>Remove a paragraph</button>
 
-    <script>
-        var allBtns = document.querySelectorAll('button');
-        var div = document.querySelector('div');
-        var num = 1;
-        allBtns[0].addEventListener('click', function () {
-            var p = document.createElement('p');
-            var text = document.createTextNode('This is paragraph number ' + ++num);
-            p.appendChild(text);
-            div.appendChild(p);
-        });
-        allBtns[1].addEventListener('click', function () {
-            if (num === 1) {
-                alert('You are trying to delete last paragraph');
-            }
-            else {
-                div.removeChild(div.lastChild);
-                num--;
-            }
-        });
-    </script>
-
 </body>
+
+<script src="script26.js"></script>
 
 </html>
