@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and jQuery Challenge Activities: Challenge 9</title>
+</head>
+
+<body>
+    <p>Don't change this paragraph</p>
+
+    <div id="main">
+        <p>Here is paragraph one</p>
+        <p>Here is paragraph two</p>
+        <p>Here is paragraph three</p>
+        <p>Here is paragraph four</p>
+        <p>Here is paragraph five</p>
+        <p>Llamas and Chickens!</p>
+        <p>Here is paragraph seven</p>
+        <p>Here is paragraph eight</p>
+        <p>Here is paragraph nine</p>
+        <p>Here is paragraph ten</p>
+        <p>Here is paragraph eleven</p>
+        <p>Here is paragraph twelve</p>
+    </div>
+
+    <script>
+        document.querySelectorAll('#main p').forEach(p => {
+            if (p.innerHTML.includes('Llamas and Chickens!'))
+                p.style.color = 'red';
+        });
+    </script>
+</body>
+
+</html>
